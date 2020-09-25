@@ -52,28 +52,12 @@ export const ProductsCard = ({
             role='presentation'
           />
 
-          {qty === 0 ? (
-            <img
-              className={styles['cardback-selected']}
-              src={cardbackgray}
-              alt=''
-              role='presentation'
-            />
-          ) : selected ? (
-            <img
-              className={styles['cardback-selected']}
-              src={cardbackblue}
-              alt=''
-              role='presentation'
-            />
-          ) : (
-            <img
-              className={styles['cardback-selected']}
-              src={cardbackpink}
-              alt=''
-              role='presentation'
-            />
-          )}
+          <img
+            className={styles['cardback-selected']}
+            src={qty ? (selected ? cardbackblue : cardbackpink) : cardbackgray}
+            alt=''
+            role='presentation'
+          />
 
           <img
             className={

@@ -31,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
-  height: 80%;
+  height: 490px;
 }
 
 .cutcorner {
@@ -40,7 +40,6 @@
   justify-content: center;
   align-content: center;
   margin: 0 80px;
-  max-width: 100%;
   cursor: pointer;
 }
 
@@ -129,7 +128,7 @@
 }
 
 .card-footer {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 13px;
 }
@@ -164,5 +163,17 @@
   }
   .card-footer {
     transform: translateY(-35px);
+  }
+  .card-wrapper {
+    height: 520px;
+  }
+}
+
+@media (max-width: 476px) {
+  .cutcorner {
+    margin: 0 10px;
+  }
+  .card-wrapper {
+    height: 520px;
   }
 }
