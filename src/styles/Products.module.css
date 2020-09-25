@@ -1,0 +1,168 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.title {
+  margin-top: 24px;
+  font-family: var(--exo-font);
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.card-wrapper {
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-disabled {
+  pointer-events: none;
+}
+
+.cards-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  height: 80%;
+}
+
+.cutcorner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 80px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.cardback {
+  position: absolute;
+  z-index: 0;
+  top: 3px;
+  width: 312px;
+  height: 473px;
+}
+
+.cardback-selected {
+  position: absolute;
+  z-index: -1;
+}
+
+.herocat {
+  position: relative;
+  z-index: 3;
+  bottom: -208px;
+  left: -27px;
+}
+
+.herocat-disabled {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.info {
+  position: absolute;
+  z-index: 4;
+  margin-top: 20px;
+  margin-left: -10px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.info-disabled {
+  color: var(--clr-lightgray);
+}
+
+.brand {
+  font-size: 16px;
+}
+
+.name {
+  margin-top: 18px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.type {
+  margin-top: 4px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.portion {
+  font-size: 14px;
+  color: var(--clr-gray);
+}
+
+.weight {
+  position: absolute;
+  z-index: 4;
+  bottom: -196px;
+  right: -16px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-family: 'Trebuchet MS';
+  color: var(--clr-white);
+}
+
+.weight-kg {
+  font-size: 42px;
+}
+
+.weight-kg-tag {
+  font-size: 20px;
+  transform: translateY(-6px);
+}
+
+.card-footer {
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.description {
+  color: var(--clr-white);
+}
+
+.disabled {
+  color: var(--clr-yellow);
+}
+
+.dashed-text {
+  font-size: 13px;
+  color: var(--clr-blue);
+  border-bottom: 1px var(--clr-blue) dashed;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+.dashed-text:hover {
+  color: var(--clr-pink);
+  border-bottom: 1px var(--clr-pink) dashed;
+}
+
+@media (max-width: 1200px) {
+  .cards-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cards-box:first-of-type {
+    flex-grow: 3;
+  }
+  .card-footer {
+    transform: translateY(-35px);
+  }
+}

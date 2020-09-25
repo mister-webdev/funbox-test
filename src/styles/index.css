@@ -1,0 +1,33 @@
+:root {
+  --exo-font: exo2-thin;
+  --clr-white: #fff;
+  --clr-white-darker: #f2f2f2;
+  --clr-black: #000;
+  --clr-blue: #1698d9;
+  --clr-pink: #d91667;
+  --clr-yellow: #ffff66;
+  --clr-gray: #666666;
+  --clr-lightgray: #b3b3b3;
+}
+
+@font-face {
+  font-family: 'exo2-thin';
+  src: local('exo2-thin'), url(../fonts/exo2-thin.otf) format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../images/pattern.png') repeat;
+  background-size: cover;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
