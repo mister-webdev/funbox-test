@@ -45,7 +45,7 @@
 
 .cardback {
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   top: 3px;
   width: 312px;
   height: 473px;
@@ -53,12 +53,12 @@
 
 .cardback-selected {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 
 .herocat {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   bottom: -208px;
   left: -27px;
 }
@@ -70,7 +70,7 @@
 
 .info {
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   margin-top: 20px;
   margin-left: -10px;
   font-family: 'Trebuchet MS', sans-serif;
@@ -104,7 +104,7 @@
 
 .weight {
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   bottom: -196px;
   right: -16px;
   width: 80px;
